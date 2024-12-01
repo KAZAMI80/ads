@@ -183,5 +183,19 @@
 
     <script src="material/js/js.js"></script>
     <script src="material/js/main.js"></script>
+
+                <script>
+    // جلوگیری از راست‌کلیک
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault(); // جلوگیری از باز شدن منوی راست‌کلیک
+    });
+
+    // جلوگیری از کپی کردن محتوا
+    document.addEventListener('copy', function (e) {
+        e.preventDefault(); // جلوگیری از کپی کردن محتوا
+    });
+</script>
+
+                
 </body>
 </html>
