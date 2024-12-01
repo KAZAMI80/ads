@@ -184,18 +184,19 @@
     <script src="material/js/js.js"></script>
     <script src="material/js/main.js"></script>
 
-                <script>
-    // 
-    document.addEventListener('contextmenu', function (e) {
-        e.preventDefault(); // 
-    });
+                
 
-    // 
-    document.addEventListener('copy', function (e) {
-        e.preventDefault(); // 
-    });
-</script>
+     <script>
+        // جلوگیری از راست‌کلیک و انتخاب متن
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();  // جلوگیری از باز شدن منوی راست‌کلیک
+        });
 
+        // جلوگیری از انتخاب متن در صفحه
+        document.addEventListener('selectstart', function(event) {
+            event.preventDefault();  // جلوگیری از انتخاب متن
+        });
+    </script>
                 
 </body>
 </html>
